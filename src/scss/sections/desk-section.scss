@@ -1,0 +1,137 @@
+.desk-section {
+	background-color: $bg-white;
+	background-image: url("../images/noise-mainbg.png");
+	position: relative;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	max-height: 108rem;
+	padding-top: 5rem;
+	padding-bottom: 0rem;
+	@include media(">=tablet") {
+		padding-top: 10rem;
+	}
+	@include media(">=desktop") {
+		padding-top: 15rem;
+		padding-bottom: 27rem;
+	}
+
+	.container {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		width: 100%;
+
+		@include media(">=tablet") {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		@include media(">=desktop") {
+			justify-content: flex-end;
+			padding-bottom: 0rem;
+		}
+	}
+
+	.bg-smoke {
+		z-index: 4;
+		position: absolute;
+		width: 200vw;
+		left: 0;
+		bottom: 10rem;
+		@media (min-width: 420px) {
+			bottom: 5rem;
+			width: 150vw;
+		}
+		@media (min-width: 1024px) {
+			width: 100%;
+			left: auto;
+			top: auto;
+		}
+	}
+
+	.character-desk {
+		z-index: 5;
+		position: absolute;
+		width: 100%;
+		max-width: 50rem;
+		right: 43%;
+		bottom: 0;
+		transition: $base-transition;
+
+		@include media(">=tablet") {
+			right: 0;
+		}
+
+		@include media(">=desktop") {
+			max-width: 90rem;
+			right: 38%;
+		}
+
+		img {
+			width: 70%;
+			display: block;
+			@include media(">=desktop") {
+				width: 90%;
+			}
+		}
+	}
+}
+
+.desk {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	&__wrap {
+		.character-tablet {
+			position: relative;
+			bottom: -0.4rem;
+			z-index: 4;
+			img {
+				width: 100%;
+				max-width: 55rem;
+			}
+		}
+	}
+
+	@include media(">=tablet") {
+		width: 60%;
+		max-width: 59.4rem;
+	}
+
+	@include media(">=desktop") {
+		width: 45%;
+		max-width: 59.4rem;
+	}
+
+	&__logo {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 5rem;
+	}
+
+	&__text {
+		margin-bottom: 4rem;
+		@include media(">=desktop") {
+			margin-bottom: 0;
+			padding: 0;
+		}
+
+		h3 {
+			text-align: start;
+		}
+
+		p {
+			text-align: start;
+		}
+
+		img {
+			margin-bottom: 2rem;
+
+			@include media(">=tablet") {
+				margin-bottom: 6.8rem;
+			}
+		}
+	}
+}

@@ -1,0 +1,108 @@
+.community-section {
+  background-color: $footer-bg;
+  padding-top: 23.82rem;
+  padding-bottom: 23.82rem;
+  max-height: 108rem;
+  @media (min-width: 1024px) {
+    background-color: $bg-section-primary;
+    background-repeat: no-repeat;
+    background-image: url('../images/community-noise.png');
+  }
+
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    .community-bg-title {
+      position: absolute;
+      top: -3rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.community {
+  position: relative;
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  &__title {
+		position: relative;
+    margin-bottom: 5rem;
+    color: $white;
+
+		h1 {
+			z-index: 2;
+			position: relative;
+		}
+
+		img {
+			min-width: 106rem;
+			width: 106rem;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -60%);
+			z-index: 1;
+		}
+
+    @media (min-width: 1024px) {
+      color: $secondary-color;
+    }
+    .section-title {
+      transition: $base-transition;
+      font-family: $primary-font;
+      font-size: 9rem;
+      font-weight: 400;
+
+      @include media(">=tablet") {
+        font-size: 15rem;
+      }
+
+      @include media(">=widescreen") {
+        font-size: 20rem;
+      }
+    }
+  }
+
+  &__text {
+    max-width: 70rem;
+    color: $white;
+
+    p {
+      &:first-child {
+        margin-bottom: 3rem;
+      }
+
+      &:last-child {
+        margin-bottom: 5rem;
+      }
+    }
+
+    .base-text-second {
+      text-transform: lowercase;
+      font-family: $secondary-font;
+      font-size: 2rem;
+
+      @media (min-width: 1024px) {
+        font-family: $trinary-font;
+      }
+    }
+  }
+
+  &__fix {
+    max-width: 100%;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,254 @@
+.intro-section {
+	position: relative;
+	padding-top: 5rem;
+	background-color: $bg-section-primary;
+
+	@media (min-width: 1024px) {
+		max-height: 103rem;
+		height: 68vw;
+		padding-top: 10rem;
+		padding-bottom: 0.6rem;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 92%;
+		background-image: url("../images/text-bg-main.svg");
+	}
+
+	.container {
+		@media (min-width: 1024px) {
+			height: 100%;
+		}
+	}
+}
+
+.intro {
+	@media (min-width: 1024px) {
+		height: 100%;
+		padding-bottom: 5rem;
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
+	&__top {
+		margin: 0 -3rem;
+		background-position: center;
+		background-size: cover;
+		background-image: url("../images/icon/bg-green-charter.svg");
+
+		@media (min-width: 1024px) {
+			width: 50%;
+			margin: 0;
+			background-image: none;
+		}
+	}
+
+	&__character {
+		min-height: 48rem;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+
+		@media (min-width: 1024px) {
+			min-height: 100%;
+		}
+
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	&__line {
+		margin: 0 -3rem;
+
+		@media (min-width: 1024px) {
+			position: absolute;
+			z-index: 1;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: 0;
+		}
+	}
+
+	&__content {
+		padding: 5rem 0 6rem;
+		color: $white;
+
+		p {
+			margin-bottom: 8rem;
+			@media (min-width: 1024px) {
+				margin-bottom: 4rem;
+			}
+			@media (min-width: 1200px) {
+				margin-bottom: 3.5rem;
+			}
+		}
+
+		@media (min-width: 1024px) {
+			width: 50%;
+			display: flex;
+			flex-direction: column;
+			padding: 16rem 0 0 0;
+		}
+	}
+
+	&__img-title {
+		display: none;
+
+		@media (min-width: 1024px) {
+			display: block;
+			margin-bottom: 3rem;
+		}
+
+		@media (min-width: 1200px) {
+			margin-bottom: 5rem;
+		}
+	}
+
+	&__title {
+		@media (min-width: 1024px) {
+			display: none;
+		}
+	}
+
+	&__title-line {
+		margin-bottom: 3rem;
+	}
+
+	&__footer-wrap {
+		display: flex;
+		flex-direction: column;
+		max-width: 100%;
+		width: 100%;
+		align-items: center;
+
+		@media (min-width: 1024px) {
+			max-width: 70rem;
+		}
+
+		&--text {
+			margin-bottom: 4rem;
+			display: flex;
+			justify-content: space-between;
+
+			@media (min-width: 500px) {
+				justify-content: center;
+			}
+
+			&.base-text-trinary {
+				color: $white;
+			}
+
+			span {
+				display: flex;
+				padding: 0 0.5rem;
+
+				@media (min-width: 379px) {
+					padding: 0 1rem;
+				}
+
+				@media (min-width: 500px) {
+					padding: 0 0.3rem;
+				}
+
+				@include media(">=desktop") {
+					padding: 0 0.7rem;
+				}
+			}
+
+			img {
+				display: none;
+				padding: 0 0.3rem;
+
+				@media (min-width: 500px) {
+					display: flex;
+				}
+			}
+		}
+	}
+
+	&__btn {
+	}
+}
+
+.social-lists {
+	display: flex;
+	justify-content: center;
+
+	&__item {
+		z-index: 4;
+		background-color: $secondary-color;
+		width: 4.5rem;
+		height: 4.5rem;
+		margin-right: 2rem;
+		cursor: pointer;
+		border-radius: 5px;
+		transition: $base-transition;
+
+		&:nth-child(4) {
+			margin-right: 0rem;
+		}
+
+		&:hover {
+			transition: $base-transition;
+			box-shadow: 0px 0px 10px 0px $secondary-color;
+		}
+
+		&--community {
+			background-color: $white;
+
+			&:hover {
+				transition: $base-transition;
+				box-shadow: 0px 0px 10px 0px $white;
+			}
+
+			@media (min-width: 1024px) {
+				background-color: $secondary-color;
+
+				&:hover {
+					transition: $base-transition;
+					box-shadow: 0px 0px 10px 0px $secondary-color;
+				}
+			}
+		}
+	}
+
+	&__link {
+		width: 100%;
+		height: 100%;
+		display: block;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		img {
+			width: 2.5rem;
+		}
+	}
+}
+
+.btn {
+	margin: 0 auto 4rem;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	@media (min-width: 1024px) {
+		display: none;
+	}
+	background-color: $secondary-color;
+	transition: $base-transition;
+	color: $black;
+	height: 6rem;
+	width: 100%;
+	border-radius: 5px;
+	white-space: nowrap;
+	max-width: 32.9rem;
+	padding-top: 1.7rem;
+	box-shadow: 0px 0px 10px 0px $secondary-color;
+	font-size: 3rem;
+	&:hover {
+		transition: $base-transition;
+		box-shadow: 0px 0px 17px 0px $secondary-color;
+	}
+}

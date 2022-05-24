@@ -1,0 +1,52 @@
+.tabs {
+  z-index: 5;
+  &__header {
+    display: flex;
+  }
+
+  &__btn {
+    color: #000;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    transition: $base-transition;
+    font-size: 2rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #ccc;
+    }
+
+    & + & {
+      margin-left: 1rem;
+    }
+
+    &.active {
+      background-color: #ccc;
+    }
+  }
+
+  &__content {
+    display: none;
+    font-size: 1.6rem;
+
+    img{
+      width: 100%;
+      display: block;
+      max-width: 50rem;
+
+      @media (min-width: 1200px) {
+        max-width: 57rem;
+      }
+
+      @media (min-width: 1300px) {
+        max-width: 64rem;
+      }
+
+    }
+
+    &.active {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,164 @@
+.main-title {
+  font-family: $primary-font;
+  font-size: 5rem;
+  color: $secondary-color;
+  text-align: center;
+
+  @include media(">=tablet") {
+    font-size: 7rem;
+  }
+
+  @include media(">=widescreen") {
+    font-size: 10rem;
+  }
+}
+
+.nav-text {
+  font-family: $secondary-font;
+  font-size: 2.4rem;
+  @include media(">=tablet") {
+    font-size: 1.6rem;
+  }
+}
+
+.section-title {
+  transition: $base-transition;
+  font-family: $primary-font;
+  font-size: 10rem;
+  font-weight: 400;
+
+  @include media(">=tablet") {
+    font-size: 15rem;
+  }
+
+  @include media(">=widescreen") {
+    font-size: 20rem;
+  }
+}
+
+.section-title-two {
+  transition: $base-transition;
+  font-family: $primary-font;
+  font-size: 5rem;
+
+  @include media(">=tablet") {
+    font-size: 10rem;
+  }
+
+  @include media(">=widescreen") {
+    font-size: 15rem;
+  }
+}
+
+.accordion-text {
+  font-family: $secondary-font;
+  font-size: 1.4rem;
+  font-weight: 400;
+  @include media(">=tablet") {
+    font-size: 1.5rem;
+  }
+
+  @include media(">=widescreen") {
+    font-size: 1.6rem;
+  }
+}
+
+.section-subtitle {
+  font-family: $primary-font;
+  font-size: 5rem;
+
+  @include media(">=tablet") {
+    font-size: 5rem;
+  }
+
+  @include media(">=widescreen") {
+    font-size: 6rem;
+  }
+}
+
+.footer-title{
+  font-family: $trinary-font;
+  font-size: 1.2rem;
+
+  @include media(">=tablet") {
+    font-size: 1.7rem;
+  }
+
+  @include media(">=widescreen") {
+    font-size: 1.7rem;
+  }
+}
+
+.base-text {
+  transition: $base-transition;
+  font-family: $secondary-font;
+  font-size: 1.6rem;
+
+  @include media(">=tablet") {
+    font-size: 1.8rem;
+  }
+
+  @include media(">=widescreen-md") {
+    font-size: 2.4rem;
+  }
+}
+
+.base-text-tekonomics {
+  transition: $base-transition;
+  text-transform: lowercase;
+  font-family: $trinary-font;
+  font-size: 1.6rem;
+
+  @include media(">=tablet") {
+    font-size: 1.8rem;
+  }
+}
+
+.base-text-trinary {
+  transition: $base-transition;
+  font-family: $trinary-font;
+    font-size: 1.2rem;
+
+  @include media(">=phone") {
+    font-size: 1.4rem;
+  }
+
+  @include media(">=tablet") {
+    font-size: 1.7rem;
+  }
+
+  @include media(">=widescreen-md") {
+    font-size: 1.8rem;
+  }
+}
+
+.base-text-second {
+  transition: $base-transition;
+  font-family: $secondary-font;
+  font-size: 1.4rem;
+
+  @include media(">=tablet") {
+    font-size: 1.7rem;
+  }
+
+  @include media(">=widescreen") {
+    font-size: 1.8rem;
+  }
+}
+
+.typography {
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+  }
+}

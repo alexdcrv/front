@@ -1,0 +1,252 @@
+// margin
+
+.m {
+  &-0 {
+    margin: 0 !important;
+  }
+
+  &-auto {
+    margin: auto !important;
+  }
+
+  &t {
+    &-05 {
+      margin-top: $indent / 2 !important;
+    }
+    &-1 {
+      margin-top: $indent !important;
+    }
+    &-15 {
+      margin-top: $indent * 1.5 !important;
+    }
+    &-2 {
+      margin-top: $indent * 2 !important;
+    }
+    &-3 {
+      margin-top: $indent * 3 !important;
+    }
+    &-4 {
+      margin-top: $indent * 4 !important;
+    }
+    &-5 {
+      margin-top: $indent * 5 !important;
+    }
+    &-auto {
+      margin-top: auto !important;
+    }
+  }
+
+  &r {
+    &-05 {
+      margin-right: $indent / 2 !important;
+    }
+    &-1 {
+      margin-right: $indent !important;
+    }
+    &-15 {
+      margin-right: $indent * 1.5 !important;
+    }
+    &-2 {
+      margin-right: $indent * 2 !important;
+    }
+    &-3 {
+      margin-right: $indent * 3 !important;
+    }
+    &-4 {
+      margin-right: $indent * 4 !important;
+    }
+    &-5 {
+      margin-right: $indent * 5 !important;
+    }
+    &-auto {
+      margin-right: auto !important;
+    }
+  }
+
+  &b {
+    &-05 {
+      margin-bottom: $indent / 2 !important;
+    }
+    &-1 {
+      margin-bottom: $indent !important;
+    }
+    &-15 {
+      margin-bottom: $indent * 1.5 !important;
+    }
+    &-2 {
+      margin-bottom: $indent * 2 !important;
+    }
+    &-3 {
+      margin-bottom: $indent * 3 !important;
+    }
+    &-4 {
+      margin-bottom: $indent * 4 !important;
+    }
+    &-5 {
+      margin-bottom: $indent * 5 !important;
+    }
+    &-auto {
+      margin-bottom: auto !important;
+    }
+  }
+
+  &l {
+    &-05 {
+      margin-left: $indent / 2 !important;
+    }
+    &-1 {
+      margin-left: $indent !important;
+    }
+    &-15 {
+      margin-left: $indent * 1.5 !important;
+    }
+    &-2 {
+      margin-left: $indent * 2 !important;
+    }
+    &-3 {
+      margin-left: $indent * 3 !important;
+    }
+    &-4 {
+      margin-left: $indent * 4 !important;
+    }
+    &-5 {
+      margin-left: $indent * 5 !important;
+    }
+    &-auto {
+      margin-left: auto !important;
+    }
+  }
+
+  &x {
+    &-auto {
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+  }
+
+  &y {
+    &-auto {
+      margin-top: auto !important;
+      margin-bottom: auto !important;
+    }
+  }
+}
+
+@include media(">=tablet") {
+  .m {
+    &b-md-2 {
+      margin-bottom: $indent * 2 !important;
+    }
+  }
+}
+
+@include media(">=desktop") {
+  .m {
+    &b-lg-3 {
+      margin-bottom: $indent * 3 !important;
+    }
+  }
+}
+
+// padding
+.p {
+  &-0 {
+    padding: 0 !important;
+  }
+
+  &t {
+    &-05 {
+      padding-top: $indent / 2 !important;
+    }
+    &-1 {
+      padding-top: $indent !important;
+    }
+    &-15 {
+      padding-top: $indent * 1.5 !important;
+    }
+    &-2 {
+      padding-top: $indent * 2 !important;
+    }
+    &-3 {
+      padding-top: $indent * 3 !important;
+    }
+    &-4 {
+      padding-top: $indent * 4 !important;
+    }
+    &-5 {
+      padding-top: $indent * 5 !important;
+    }
+  }
+
+  &r {
+    &-05 {
+      padding-right: $indent / 2 !important;
+    }
+    &-1 {
+      padding-right: $indent !important;
+    }
+    &-15 {
+      padding-right: $indent * 1.5 !important;
+    }
+    &-2 {
+      padding-right: $indent * 2 !important;
+    }
+    &-3 {
+      padding-right: $indent * 3 !important;
+    }
+    &-4 {
+      padding-right: $indent * 4 !important;
+    }
+    &-5 {
+      padding-right: $indent * 5 !important;
+    }
+  }
+
+  &b {
+    &-05 {
+      padding-bottom: $indent / 2 !important;
+    }
+    &-1 {
+      padding-bottom: $indent !important;
+    }
+    &-15 {
+      padding-bottom: $indent * 1.5 !important;
+    }
+    &-2 {
+      padding-bottom: $indent * 2 !important;
+    }
+    &-3 {
+      padding-bottom: $indent * 3 !important;
+    }
+    &-4 {
+      padding-bottom: $indent * 4 !important;
+    }
+    &-5 {
+      padding-bottom: $indent * 5 !important;
+    }
+  }
+
+  &l {
+    &-05 {
+      padding-left: $indent / 2 !important;
+    }
+    &-1 {
+      padding-left: $indent !important;
+    }
+    &-15 {
+      padding-left: $indent * 1.5 !important;
+    }
+    &-2 {
+      padding-left: $indent * 2 !important;
+    }
+    &-3 {
+      padding-left: $indent * 3 !important;
+    }
+    &-4 {
+      padding-left: $indent * 4 !important;
+    }
+    &-5 {
+      padding-left: $indent * 5 !important;
+    }
+  }
+}

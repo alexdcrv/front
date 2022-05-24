@@ -1,0 +1,45 @@
+// Breakpoints
+$breakpoints: (
+  'phone-sm': 320px,
+  'phone-md': 375px,
+  'phone': 480px,
+  'phone-lg': 576px,
+  'tablet': 769px,
+  'tablet-lg': 992px,
+  'desktop': 1024px,
+  'widescreen': 1200px,
+  'widescreen-md': 1360px,
+  'widescreen-lg': 1440px,
+  'full-hd': 1920px,
+);
+
+// Colors
+$black: #000000;
+$white: #FFFFFF;
+$border: #CCCCCC;
+$success: #28A745;
+$warning: #FFC117;
+$error: #DC3545;
+$primary-color:#2A2A2A;
+$secondary-color: #70FF00;
+$trinary-color:#2B2B2B;
+$bg-section-primary: #0F0F0F;
+$bg-white:#C8C8C8;
+$bg-section-roadmap:#0D0D0D;
+$bg-section-token: #BDBDBD;
+$footer-bg:#0E0E0E;
+$accordion-text-color: #6B6B6B;
+$accordion-active: #434343;
+$bg-team: #C4C4C4;
+
+// Fonts
+$primary-font: 'MFred';
+$secondary-font: 'Airborne';
+$trinary-font: 'Joyride';
+
+// Other
+$base-transition: all 0.3s ease;
+$speed: 50s;
+
+// Indents
+$indent: 10px;

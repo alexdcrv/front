@@ -1,0 +1,87 @@
+.tokenomic-section {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+  background-color: $bg-section-token;
+  background-repeat: no-repeat;
+  background-image: none;
+  @media (min-width: 1024px) {
+    max-height: 108rem;
+    padding-top: 10.5rem;
+    padding-bottom: 11.1rem;
+    background-image: url('../images/noise-mainbg.png');
+
+  }
+
+  .container {}
+}
+
+.tokenomic {
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin-bottom: 5rem;
+    text-align: center;
+
+    .section-title {
+      transition: $base-transition;
+      font-family: $primary-font;
+      font-size: 8.5rem;
+      font-weight: 400;
+
+      @include media(">=tablet") {
+        font-size: 15rem;
+      }
+
+      @include media(">=widescreen") {
+        font-size: 20rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      margin-bottom: 7rem;
+    }
+  }
+
+  &__grapg-small{
+    margin-bottom: 4.3rem;
+  }
+
+  &__percentages{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3.8rem;
+    .percentages{
+      border-top: 1px solid #0E0E0E;
+      width: 100%;
+      max-width: 37.4rem;
+      padding-top: 5rem;
+      &__item{
+        display: flex;
+        padding-bottom: 1.5rem;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  &__btn{
+    display: block;
+    margin: 0 auto;
+    @media (min-width: 1024px) {
+      display: none;
+    }
+    max-width: 30.4rem;
+    font-family: $secondary-font;
+    padding-top: 0.5rem;
+    font-size: 2.6rem;
+    &:hover{
+      transition: $base-transition;
+      box-shadow: 0px 0px 30px 0px $secondary-color;
+    }
+  }
+}

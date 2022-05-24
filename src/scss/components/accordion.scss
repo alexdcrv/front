@@ -1,0 +1,147 @@
+.accordion-section {
+  background-color: $bg-section-primary;
+  padding-bottom: 5rem;
+  padding-top: 12rem;
+  background-image: none;
+  @include media ('>=tablet') {
+    padding-bottom: 12rem;
+    padding-top: 15rem;
+    background-image: url('../images/community-noise.png');
+    background-size: auto;
+  }
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &+& {
+    margin-top: 10px;
+  }
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+
+    &:hover {
+      .accordion__btn {
+        background-color: #ddd;
+      }
+    }
+
+    &.active {
+      background-color: #ddd;
+
+      .accordion__btn {
+        svg {
+          transform: rotate(180deg);
+        }
+      }
+
+      &+.accordion__content {
+        max-height: 1000px;
+      }
+    }
+
+
+
+    .accordion__title {
+      background-color: #000;
+      margin-bottom: 0;
+      border: none;
+      &:hover {
+        background-color: #fff;
+      }
+    }
+  }
+
+  &__btn {
+    width: 5rem;
+    flex: none;
+
+    svg {
+      transition: $base-transition;
+    }
+  }
+
+  &__title {
+    border-radius: 5px;
+    background-color: $trinary-color;
+    position: relative;
+    color: $accordion-text-color;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+
+    @include media ('>=tablet') {
+      width: 60%;
+    }
+
+    //margin-bottom: 10px;
+
+    &--more {
+      &:after {
+        position: absolute;
+        transition: $base-transition;
+        content: url('../images/icon/vector-arrow.svg');
+        top: 35%;
+        @media (min-width: 764px) {
+          top: 1.8rem;
+        }
+        right: 20px;
+      }
+
+      &.active {
+        border-radius: 5px 5px 0px 0px;
+        &:after {
+          margin-top: 0.5rem;
+          transition: $base-transition;
+          transform: rotate(-180deg);
+        }
+      }
+    }
+
+    &:hover {
+      color: $white;
+      background-color: $accordion-active;
+    }
+
+    &.active {
+      color: $white;
+      background-color: $accordion-active;
+
+      &+.accordion__content {
+        max-height: 1000px;
+      }
+    }
+  }
+
+  &__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+    color: $white;
+    background-color: $accordion-active;
+    box-shadow: 0px 0px 4px #000;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 0px 0px 5px 5px;
+    @include media ('>=tablet') {
+      width: 60%;
+    }
+  }
+
+  &__descr {
+    padding: 10px 20px;
+    p{
+      padding-bottom: 10px;
+    }
+  }
+}
+
+.accordion__main-title{
+  margin-bottom: 3rem;
+}

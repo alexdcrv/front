@@ -1,0 +1,70 @@
+.preloader {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #090909;
+	padding: 0 3rem;
+	background-image: url("../images/community-noise.png");
+	z-index: 20;
+	transition: 1s all;
+	opacity: 1;
+	visibility: visible;
+	overflow: hidden;
+
+	.loader {
+		width: 10rem;
+		height: 10rem;
+		border: solid 5px white;
+		border-radius: 50%;
+		border-top-color: $secondary-color;
+		position: absolute;
+		left: 50%;
+		bottom: 8%;
+		z-index: 21;
+		transform: translate(-50%, -50%);
+		animation: 0.7s spin infinite linear;
+
+		@media (min-width: 500px) {
+			bottom: 6%;
+			width: 14rem;
+			height: 14rem;
+		}
+
+		@media (min-width: 1501px) {
+			bottom: 4%;
+			width: 17rem;
+			height: 17rem;
+		}
+	}
+	&__content {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__title {
+		max-width: 120rem;
+		width: 100%;
+	}
+	
+	&.done {
+		overflow: visible;
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+@keyframes spin {
+	from {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+
+	to {
+		transform: translate(-50%, -50%) rotate(360deg);
+	}
+}
